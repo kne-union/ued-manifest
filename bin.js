@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-const download = require('./download');
-const {generate} = require('./manifest');
+const {generate, download} = require('./index');
 
 const args = process.argv.slice(2);
 
