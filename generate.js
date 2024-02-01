@@ -1,3 +1,3 @@
-const {generate} = require('./manifest');
+const {generate} = require('./index');
 
 generate();
