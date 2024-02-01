@@ -48,7 +48,9 @@ const manifest = async () => {
 };
 
 const generate = async () => {
-    await fs.writeJson(path.resolve(process.cwd(), 'manifest.json'), await manifest());
+    const output = path.resolve(process.cwd(), 'build');
+    await fs.emptyDir(output);
+    await fs.writeJson(path.resolve(output, 'manifest.json'), await manifest());
 };
 
 module.exports = {
