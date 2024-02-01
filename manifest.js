@@ -49,7 +49,7 @@ const manifest = async () => {
 
 const generate = async () => {
     const output = path.resolve(process.cwd(), 'build');
-    await fs.emptyDir(output);
+    await fs.ensureDir(output);
     await fs.writeJson(path.resolve(output, 'manifest.json'), await manifest());
 };
 

@@ -34,7 +34,7 @@ module.exports = async () => {
         });
         console.log(`[${item.name}/${item.version}]开始解压压缩包`);
         await decompress(fileDir, tmpdir);
-        const output = path.resolve(process.cwd(), 'dist', item.name, item.version);
+        const output = path.resolve(process.cwd(), 'build', item.name, item.version);
         await fs.emptyDir(output);
         await fs.copy(path.resolve(tmpdir, 'package', 'build'), output);
         console.log(`[${item.name}/${item.version}]下载完成`);
