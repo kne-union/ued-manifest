@@ -25,6 +25,7 @@ const loadPackageInfo = async (packageName) => {
                 signatures: item.dist.signatures,
                 tarball: item.dist.tarball,
                 unpackedSize: item.dist.unpackedSize,
+                time: packageData.time[item.version]
             };
         }, {}),
         homepage: packageData.homepage,
