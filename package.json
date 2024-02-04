@@ -11,7 +11,9 @@
       "@kne/components-core",
       "@kne/components-iconfont"
     ],
-    "libs": []
+    "libs": [
+      "@kne-components/react-form"
+    ]
   },
   "files": [
     "bin.js",
