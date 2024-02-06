@@ -8,8 +8,8 @@
   },
   "ued-config": {
     "remote-components": [
-      "@kne/components-core",
-      "@kne/components-iconfont"
+      "@kne-components/components-core",
+      "@kne-components/components-iconfont"
     ],
     "libs": [
       "@kne-components/react-form"
