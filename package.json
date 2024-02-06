@@ -1,6 +1,6 @@
 {
   "name": "@kne/ued-manifest",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "生成ued收录项目的信息",
   "main": "index.js",
   "bin": {
@@ -28,6 +28,7 @@
   "author": "linzp",
   "license": "ISC",
   "dependencies": {
+    "@kne/camel-case": "^0.1.1",
     "@kne/ensure-slash": "^0.1.0",
     "cross-spawn-promise": "^0.10.2",
     "decompress": "^4.2.1",
