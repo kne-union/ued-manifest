@@ -14,6 +14,7 @@
     "libs": [
       "@kne-components/react-form",
       "@kne-components/react-form-antd",
+      "@kne-components/react-fetch",
       "@kne-components/react-org-chart"
     ]
   },
