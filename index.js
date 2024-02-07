@@ -53,7 +53,17 @@ const manifest = async () => {
 const generate = async () => {
     const output = path.resolve(process.cwd(), 'build');
     await fs.ensureDir(output);
-    await fs.writeJson(path.resolve(output, 'manifest.json'), await manifest());
+    await fs.writeJson(path.resolve(output, 'manifest.json'), lodash.transform(await manifest(), (result, value, key) => {
+        if (key === 'libs' && Array.isArray(value)) {
+            result[key] = value.map((item) => {
+                return Object.assign({}, item, {
+                    versions: {[item.version]: item.versions[item.version]}
+                });
+            });
+        } else {
+            result[key] = value;
+        }
+    }, {}));
 };
 
 const download = async () => {
