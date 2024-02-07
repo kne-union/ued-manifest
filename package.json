@@ -13,7 +13,8 @@
     ],
     "libs": [
       "@kne-components/react-form",
-      "@kne-components/react-form-antd"
+      "@kne-components/react-form-antd",
+      "@kne-components/react-org-chart"
     ]
   },
   "files": [
