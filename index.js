@@ -47,6 +47,8 @@ const manifest = async () => {
         }))).filter((item) => !!item);
     }));
 
+    console.log('生成结果:', JSON.stringify(manifest, null, 2));
+
     return manifest;
 };
 
