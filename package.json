@@ -19,6 +19,7 @@
       "@kne-components/react-org-chart",
       "@kne-components/use-css-variables",
       "@kne-components/use-click-outside",
+      "@kne-components/use-simulation-blur",
       "@kne-components/react-file-type"
     ]
   },
