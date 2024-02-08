@@ -12,6 +12,7 @@
       "@kne-components/components-iconfont"
     ],
     "libs": [
+      "@kne-components/remote-loader",
       "@kne-components/react-form",
       "@kne-components/react-form-antd",
       "@kne-components/react-fetch",
