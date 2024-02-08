@@ -29,7 +29,8 @@ const loadPackageInfo = async (packageName) => {
             };
         }, {}),
         homepage: packageData.homepage,
-        repository: packageData.repository
+        repository: packageData.repository,
+        readme: packageData.readme
     }
 };
 
@@ -58,13 +59,31 @@ const generate = async () => {
     await fs.writeJson(path.resolve(output, 'manifest.json'), lodash.transform(await manifest(), (result, value, key) => {
         if (key === 'libs' && Array.isArray(value)) {
             result[key] = value.map((item) => {
+                return lodash.omit(Object.assign({}, item, {
+                    versions: {[item.version]: item.versions[item.version]}
+                }), ['readme']);
+            });
+            return;
+        }
+
+        if (key === 'miniprograms' && Array.isArray(value)) {
+            result[key] = value.map((item) => {
                 return Object.assign({}, item, {
                     versions: {[item.version]: item.versions[item.version]}
                 });
             });
-        } else {
-            result[key] = value;
+            return;
         }
+
+        result[key] = value.map((item) => {
+            return lodash.omit(Object.assign({}, item, {
+                versions: lodash.transform(item.versions, (result, value, key) => {
+                    if (Object.keys(result).length < 10) {
+                        result[key] = value;
+                    }
+                }, {})
+            }), ['readme']);
+        });
     }, {}));
 };
 
