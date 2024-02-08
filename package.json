@@ -18,6 +18,7 @@
       "@kne-components/react-fetch",
       "@kne-components/react-org-chart",
       "@kne-components/use-css-variables",
+      "@kne-components/use-click-outside",
       "@kne-components/react-file-type"
     ]
   },
