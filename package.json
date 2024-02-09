@@ -1,6 +1,6 @@
 {
   "name": "@kne/ued-manifest",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "生成ued收录项目的信息",
   "main": "index.js",
   "bin": {
@@ -41,6 +41,7 @@
   "dependencies": {
     "@kne/camel-case": "^0.1.1",
     "@kne/ensure-slash": "^0.1.0",
+    "@kne/md-doc": "^0.1.8",
     "cross-spawn-promise": "^0.10.2",
     "decompress": "^4.2.1",
     "fs-extra": "^11.2.0",

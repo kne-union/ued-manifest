@@ -6,6 +6,7 @@ const ensureSlash = require('@kne/ensure-slash');
 const lodash = require('lodash');
 const tmp = require("tmp");
 const decompress = require("decompress");
+const {parse} = require('@kne/md-doc');
 
 const loadPackageInfo = async (packageName) => {
     const registryDomain = await spawn('npm', ['config', 'get', 'registry']);
@@ -30,7 +31,7 @@ const loadPackageInfo = async (packageName) => {
         }, {}),
         homepage: packageData.homepage,
         repository: packageData.repository,
-        readme: packageData.readme
+        readme: parse(packageData.readme)
     }
 };
 
