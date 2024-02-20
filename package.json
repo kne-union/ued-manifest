@@ -9,7 +9,8 @@
   "ued-config": {
     "remote-components": [
       "@kne-components/components-core",
-      "@kne-components/components-iconfont"
+      "@kne-components/components-iconfont",
+      "@kne-components/components-field"
     ],
     "libs": [
       "@kne-components/remote-loader",
