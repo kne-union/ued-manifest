@@ -10,7 +10,8 @@
     "remote-components": [
       "@kne-components/components-core",
       "@kne-components/components-iconfont",
-      "@kne-components/components-field"
+      "@kne-components/components-field",
+      "@kne-components/components-account"
     ],
     "libs": [
       "@kne-components/remote-loader",
