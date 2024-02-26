@@ -1,6 +1,6 @@
 {
   "name": "@kne/ued-manifest",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "生成ued收录项目的信息",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,8 @@
       "@kne-components/components-core",
       "@kne-components/components-iconfont",
       "@kne-components/components-field",
-      "@kne-components/components-account"
+      "@kne-components/components-account",
+      "@kne-components/components-ckeditor"
     ],
     "libs": [
       "@kne-components/remote-loader",
