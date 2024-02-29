@@ -1,6 +1,6 @@
 {
   "name": "@kne/ued-manifest",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "生成ued收录项目的信息",
   "main": "index.js",
   "bin": {
@@ -23,7 +23,8 @@
       "@kne-components/react-file-type"
     ],
     "miniprograms": [
-      "@kne/mini-core"
+      "@kne/mini-core",
+      "@kne/antd-taro"
     ]
   },
   "files": [
