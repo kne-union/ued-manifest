@@ -1,6 +1,6 @@
 {
   "name": "@kne/ued-manifest",
-  "version": "0.1.10",
+  "version": "0.1.13",
   "description": "生成ued收录项目的信息",
   "main": "index.js",
   "bin": {
@@ -9,12 +9,16 @@
   "ued-config": {
     "remote-components": [
       "@kne-components/components-core",
-      "@kne-components/components-iconfont"
+      "@kne-components/components-iconfont",
+      "@kne-components/components-field",
+      "@kne-components/components-account",
+      "@kne-components/components-ckeditor"
     ],
     "libs": [
       "@kne-components/remote-loader",
       "@kne-components/react-form",
       "@kne-components/react-form-antd",
+      "@kne-components/jsonschema-form",
       "@kne-components/react-fetch",
       "@kne-components/react-org-chart",
       "@kne-components/use-css-variables",
