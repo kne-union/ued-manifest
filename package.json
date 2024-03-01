@@ -12,7 +12,8 @@
       "@kne-components/components-iconfont",
       "@kne-components/components-field",
       "@kne-components/components-account",
-      "@kne-components/components-ckeditor"
+      "@kne-components/components-ckeditor",
+      "@kne-components/components-document"
     ],
     "libs": [
       "@kne-components/remote-loader",
